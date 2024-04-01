@@ -13,7 +13,8 @@ public class SimpleTimeConversions
             char choice;
             do
             {
-                Console.WriteLine("\nSelect preferred time conversion");
+                Console.WriteLine("-----------------------------------------------");
+                Console.WriteLine("Select preferred time conversion");
                 Console.WriteLine("(1) Seconds to Minutes");
                 Console.WriteLine("(2) Minutes to Hours");
                 Console.WriteLine("(3) Hours to Days");
@@ -21,32 +22,33 @@ public class SimpleTimeConversions
 
                 Console.Write("Enter your choice (1-4): ");
                 int choiceSelection = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("-----------------------------------------------");
 
                 switch (choiceSelection)
                 {
                     case 1:
-                        Console.WriteLine("\n\t++Seconds to Minutes++");
+                        Console.WriteLine("\t++Seconds to Minutes++");
                         Console.Write("Enter Seconds: ");
                         double seconds = Convert.ToInt64(Console.ReadLine());
                         double toMinutes = seconds / 60;
                         Console.WriteLine(seconds + " second is converted into " + toMinutes + " minute/s.");
                         break;
                     case 2:
-                        Console.WriteLine("\n\t++Minutes to Hours++");
+                        Console.WriteLine("\t++Minutes to Hours++");
                         Console.Write("Enter Minutes: ");
                         double minutes = Convert.ToInt64(Console.ReadLine());
                         double toHours = minutes / 60;
                         Console.WriteLine(minutes + " minutes is converted into " + toHours + " hour/s.");
                         break;
                     case 3:
-                        Console.WriteLine("\n\t++Hours to Days++");
+                        Console.WriteLine("\t++Hours to Days++");
                         Console.Write("Enter Hours: ");
                         double hours = Convert.ToInt64(Console.ReadLine());
                         double toDays = hours / 24;
                         Console.WriteLine(hours + " hours is converted into " + toDays + " day/s.");
                         break;
                     case 4:
-                        Console.WriteLine("\n\t++Days to Months++");
+                        Console.WriteLine("\t++Days to Months++");
                         Console.Write("Enter Days: ");
                         double days = Convert.ToInt64(Console.ReadLine());
                         double toMonths = days / 30.42;
